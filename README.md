@@ -1,7 +1,7 @@
 # Linked-List-based-Notepad
 Linked List based notepad
 <br>
-Authtor : Abdulahad
+Authtor : Abdulahad Iltaf
 <br>
 Done using c++
 <br>
