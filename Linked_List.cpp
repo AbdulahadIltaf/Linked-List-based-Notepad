@@ -287,7 +287,13 @@ void Move_Cursor()
                 else if (key == 27) { 
                     break; 
                 }else if (cursor->after == NULL) { 
+                    if (key == 13)
+                    {
+                        insertCharacter('\n');
+                        goto here;
+                    }
                     insertCharacter(char(key));
+                    here:
                     if(key == 32)
                     {
                         x = "";
@@ -298,8 +304,8 @@ void Move_Cursor()
                         x += char(key);
                     }
                     look_into_dic(x);
-                     std::clock_t start = std::clock();
-        while ((std::clock() - start) / CLOCKS_PER_SEC < 1) {}
+        //              std::clock_t start = std::clock();
+        // while ((std::clock() - start) / CLOCKS_PER_SEC < 0.01) {}
    
                 }
 
